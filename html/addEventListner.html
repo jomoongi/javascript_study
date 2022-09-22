@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<input type="button" id="target" value="button" />
+
+
+</body>
+<script>
+    let t = document.getElementById('target');
+
+    //addEventListener를 호출하는데 첫번째 인자로 이벤트 타입을 받는다
+    t.addEventListener('click', function (event) {
+        alert('Hello World, ' + event.target.value);
+    })
+</script>
+</html>
